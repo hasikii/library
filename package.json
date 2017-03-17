@@ -1,0 +1,40 @@
+{
+  "name": "sparrow",
+  "version": "1.0.0",
+  "description": "library",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --require babel-register --watch --colors ./test/*.spec.js",
+    "dev": "webpack --progress --colors --watch --mode=development",
+    "build": "webpack --mode=production",
+    "lint": "eslint ./src",
+    "lint:fix": "eslint ./src --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hasikii/library.git"
+  },
+  "keywords": [
+    "es6",
+    "webpack",
+    "sparrow"
+  ],
+  "author": "zs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hasikii/library/issues"
+  },
+  "homepage": "https://github.com/hasikii/library#readme",
+  "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-register": "^6.24.0",
+    "chai": "^3.5.0",
+    "eslint": "^3.17.1",
+    "eslint-loader": "^1.6.3",
+    "mocha": "^3.2.0",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.16.1"
+  }
+}
